@@ -12,9 +12,17 @@
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <label for="color-change-selector">Select priority</label>
+      <select id="color-change-selector">
+        <option value='' disabled selected>Priority</option>
+        <option value='highPriority'>High</option>
+        <option value='mediumPriority'>Medium</option>
+        <option value='lowPriority'>Low</option>
+      </select>
       <input type="submit" value="Create New Task">
     </form>
 
+    
     <div id="list">
       <h2>My Todos</h2>
       <ul id="tasks">
